@@ -1,0 +1,11 @@
+.Created the ecommerce front page with html nd css
+.created a sidebar ** DO THIS LATER
+.Created a React app, then moved all the html nd css to my React app
+// 
+.make the product div dynamic
+.created data.js then made a list of Data
+make the rating dynamic by creating its own component 
+.created a product page, where a user can click a product name and will be redirected to the product  page
+.install react router dom
+.created the Home and Product route the app.js
+.moved the productCard to the productScreen component

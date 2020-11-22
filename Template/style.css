@@ -1,0 +1,111 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+  background-color: rgba(245, 245, 245, 0.534);
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 7rem 1fr 12rem;
+  height: 100%;
+}
+.header {
+  grid-area: header;
+  background-color: rgba(245, 245, 245, 0.534);
+  color: goldenrod;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+.brand a {
+  color: rgb(218, 165, 32);
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Rock Salt", cursive;
+  text-decoration: none;
+}
+.icon-logo {
+  width: 25px;
+  margin-left: 10px;
+}
+.links-logo {
+  width: 15px;
+  margin-right: 3px;
+}
+.header-links a {
+  color: goldenrod;
+  text-decoration: none;
+  margin: 1rem;
+}
+.header-links a:hover {
+  color: rgb(31, 31, 31);
+
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.055), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  border-radius: 30%;
+  padding: 10px 10px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+/*Main*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.row.center {
+  justify-content: center;
+}
+img {
+  border-radius: i.5rem;
+}
+img.medium {
+  max-width: 29rem;
+  width: 100%;
+}
+h2 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+.card {
+  border: 0.1rem gray solid;
+  background-color: rgb(244, 248, 244);
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+.rating span {
+  color: gold;
+  margin: 0.1rem;
+}
+.card-body {
+  padding: 1rem;
+}
+/*ll element inside body/ all direct child inside body*/
+.card-body > * {
+  margin-bottom: 0.5rem;
+}
+.price {
+  font-size: 2rem;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+  color: goldenrod;
+  background-color: black;
+}
